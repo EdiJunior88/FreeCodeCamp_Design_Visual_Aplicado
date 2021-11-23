@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Mudar a posição relativa de um elemento</title>
+</head>
+<body>
+  <h1>Mudar a posição relativa de um elemento</h1>
+  <p>
+    O CSS trata cada elemento HTML como uma caixa. Esse conceito é geralmente referido como CSS Box Model. Elementos de nível de bloco são empilhados um em cima do outro (pense nas divs, parágrafos e títulos) enquanto os elementos de linha são inseridos um lado do outro (como imagens ou spans). Essa é a organização padrão dos elementos no CSS e é chamada de normal flow (fluxo normal). Mas o CSS também oferece uma propriedade para posicionar os elementos de forma manual.
+
+    <br><br>
+
+    Ao definir a posição de um elemento para <code><mark>relative</mark></code>, o CSS permite que você mova o elemento relativamente à sua posição atual. Ela trabalha em conjunto com as propriedades de deslocamento do CSS <code><mark>left</mark></code> (esquerda) ou <code><mark>right</mark></code> (direita) e <code><mark>top</mark></code> (superior) ou <code><mark>bottom</mark></code> (inferior). Estas propriedades definem quantos pixels, porcentagens ou ems deslocar o elemento para longe de onde ele inicialmente foi posicionado. O exemplo a seguir afasta o parágrafo em 10 pixels a partir da parte inferior:
+
+    <br>
+
+    <div>
+      <code>
+        p {
+          <br>
+          &nbsp; position: relative;
+          <br>
+          &nbsp; bottom: 10px;
+          <br>
+        }
+      </code>
+    </div>
+
+    <br>
+
+    Alterar a posição de um elemento para relativo não o remove do fluxo normal - outros elementos em torno dele ainda se comportam como se o item estivesse em sua posição padrão.
+
+    <br><br>
+
+    <strong>Observção</strong>: o posicionamento dá a você muita flexibilidade e poder sobre o layout visual de uma página. É bom lembrar que a posição visual dos elementos não importa. O que importa é o código HTML final ser organizado e fazer sentido quando for lido de cima para baixo. É assim que os usuários com deficiências visuais (que dependem de dispositivos como leitores de tela) acessam seu conteúdo.
+
+    <br><br>
+
+    No elemento <code><mark>h2</mark></code>, altere a propriedade <code><mark>position</mark></code> para <code><mark>relative</mark></code> e use a propriedade <code><mark>top</mark></code> para mover o elemento a partir do topo. Observe que a posição dos elementos h1 e p não sofre nenhuma alteração.
+  </p>
+</body>
+</html>
