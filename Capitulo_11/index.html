@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Adicionar sombras a um elemento de cartão</title>
+</head>
+<body>
+  <h1>Adicionar sombras a um elemento de cartão</h1>
+  <p>
+    A propriedade box-shadow aplica uma ou mais sombras a um elemento.
+
+    <br><br>
+
+    A propriedade <code><mark>box-shadow</mark></code> recebe valores para
+
+    <ul>
+      <li>
+        <code><mark>offset-x</mark></code> (determina a distância que você quer "empurrar" a sombra na horizontal),
+      </li>
+      <li>
+        <code><mark>offset-y</mark></code> (determina a distância que você quer "empurrar" a sombra na vertical),
+      </li>
+      <li>
+        <code><mark>blur-radius</mark></code> (faz com que a sombra fique mais borrada),
+      </li>
+      <li><code><mark>spread-radius</mark></code> (faz com que a sombra se espalhe mais) e</li>
+      <li><code><mark>color</mark></code> (cor), nessa ordem.</li>
+    </ul>
+
+    Os valores <code><mark>blur-radius</mark></code> e <code><mark>spread-radius</mark></code> são opcionais.
+
+    <br><br>
+    
+    Múltiplas sombras podem ser criadas usando vírgulas para separar os valores de cada <code><mark>box-shadow</mark></code>.
+
+    <br><br>
+
+    Um exemplo de CSS para criar várias sombras com um pouco de desfoque (blur), usando a cor preta quase transparente:
+
+    <br><br>
+    
+    <div>
+      <code>
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+      </code>
+    </div>
+    
+    <br>
+    
+    O elemento ao qual você precisa aplicar a sombra tem um id de <code><mark>thumbnail</mark></code>. Com esse seletor, use os valores CSS do exemplo acima para colocar uma <code><mark>box-shadow</mark></code> no cartão.
+  </p>
+</body>
+</html>
