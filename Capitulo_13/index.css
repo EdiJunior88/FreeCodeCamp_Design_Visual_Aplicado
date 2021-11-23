@@ -1,0 +1,36 @@
+div {
+  background-color: rgb(112, 250, 100);
+  padding: 20px 20px;
+  font-weight: bolder;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td {
+  border: 1px solid black;
+  padding: 10px 15px;
+  text-align: center;
+}
+
+tr:nth-child(1) {
+  font-weight: bolder;
+}
+
+tr:nth-child(2) {
+  background-color: rgba(221, 220, 220, 0.747);
+}
+
+tr:nth-child(4) {
+  background-color: rgba(221, 220, 220, 0.747);
+}
+
+tr:nth-child(6) {
+  background-color: rgba(221, 220, 220, 0.747);
+}
+
+td:nth-child(n) mark {
+  background-color: rgb(189, 192, 191);
+  padding: 5px;
+}
