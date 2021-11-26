@@ -1,0 +1,23 @@
+div {
+  background-color: rgb(112, 250, 100);
+  padding: 20px 20px;
+  font-weight: bolder;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table td {
+  padding: 10px 15px;
+  text-align: center;
+}
+
+tr:nth-child(1) {
+  font-weight: bolder;
+}
+
+tr:nth-child(2),
+tr:nth-child(4)  {
+  background: rgb(211, 211, 211);
+}
