@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Prender um elemento ao seu elemento pai com posicionamento absolute</title>
+</head>
+<body>
+  <h1>Prender um elemento ao seu elemento pai com posicionamento absolute</h1>
+  <p>
+    A próxima opção da propriedade CSS <code><mark>position</mark></code> é <code><mark>absolute</mark></code>, que prende o elemento relativamente ao contêiner do seu elemento pai. Diferente da posição <code><mark>relative</mark></code>, esta posição remove o elemento do fluxo normal do documento, fazendo com que os itens ao seu redor o ignorem. As propriedades de deslocamento do CSS (top ou bottom e left ou right) são usadas para ajustar a posição.
+
+    <br><br>
+
+    Um detalhe do posicionamento absoluto é que a posição do elemento será vinculada relativamente ao elemento ancestral mais próximo que tenha definida uma propriedade position diferente de static. Se você esquecer de adicionar a propriedade position ao elemento pai, (isso é geralmente feito utilizando <code><mark>position: relative;</mark></code>), o navegador continuará buscando a propriedade position nos elementos anteriores até chegar ao elemento <code><mark>body</mark></code>.
+
+    <br><br>
+
+    Prenda o elemento <code><mark>#searchbar</mark></code> no canto superior direito do elemento <code><mark>section</mark></code> pai, declarando a propriedade <code><mark>position</mark></code> com o valor de <code><mark>absolute</mark></code>. Dê a ele as propriedade <code><mark>top</mark></code> e <code><mark>right</mark></code> de 50 pixels cada.
+  </p>
+</body>
+</html>
