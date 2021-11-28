@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Usar animações CSS para alterar o estado de foco de um botão</title>
+</head>
+<body>
+  <h1>Usar animações CSS para alterar o estado de foco de um botão</h1>
+  <p>
+    Você pode usar a regra CSS <code><mark>@keyframes</mark></code> para alterar a cor de um botão em seu estado de foco.
+
+    <br><br>
+
+    Aqui está um exemplo de alteração da largura de uma imagem ao passar o cursor do mouse por cima:
+
+    <br>
+
+    <div>
+      <code>
+        &ltstyle&gt
+            <br>
+            &nbsp; img {
+            <br>
+            &nbsp; &nbsp; width: 30px;
+            <br>
+            &nbsp; }
+          <br>
+          <br>
+          &nbsp; img:hover {
+            <br>
+            &nbsp; &nbsp; animation-name: width;
+            <br>
+            &nbsp; &nbsp; animation-duration: 500ms;
+            <br>
+          &nbsp; }
+          <br><br>
+          &nbsp; @keyframes width {
+            <br>
+            &nbsp; &nbsp; 100% {
+              <br>
+              &nbsp; &nbsp; &nbsp; width: 40px;
+              <br>
+              &nbsp; &nbsp; }
+            <br>
+            &nbsp; }
+          <br>
+        &lt/style&gt
+        <br><br>
+        &ltimg src="https://cdn.freecodecamp.org/curriculum/applied-visual-design/google-logo.png" alt="Google's Logo"/&gt
+      </code>
+    </div>
+    
+    <br>
+
+    Observe que <code><mark>ms</mark></code> representa milissegundos, onde 1000ms é igual a 1s.
+
+    <br><br>
+
+    Use a regra CSS <code><mark>@keyframes</mark></code> para alterar a propriedade <code><mark>background-color</mark></code> do elemento button para que se torne <code><mark>#4791d0</mark></code> quando um usuário passar o cursor do mouse sobre ele. A regra <code><mark>@keyframes</mark></code> deve ter apenas um frame de <code><mark>100%</mark></code>.
+  </p>
+</body>
+</html>
