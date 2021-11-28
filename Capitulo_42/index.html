@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Modificar o modo de preenchimento de uma animação</title>
+</head>
+<body>
+  <h1>Modificar o modo de preenchimento de uma animação</h1>
+  <p>
+    Está legal, mas ainda podemos melhorar. Observe como a animação é reiniciada após <code>500ms</code>, fazendo com que o botão volte à cor original. Nós queremos que o botão permaneça destacado.
+
+    <br><br>
+
+    Isso pode ser feito definindo a propriedade <code><mark>animation-fill-mode</mark></code> com o valor <code><mark>forwards</mark></code>. O <code><mark>animation-fill-mode</mark></code> especifica o estilo que será aplicado a um elemento quando a animação terminar. Você pode configurá-la assim:
+
+    <br>
+
+    <div>
+      <code>
+        animation-fill-mode: forwards;
+      </code>
+    </div>
+
+    <br>
+
+    Defina a propriedade <code><mark>animation-fill-mode</mark></code> do seletor <code><mark>button:hover</mark></code> com o valor <code><mark>forwards</mark></code> para que o botão permaneça destacado quando o usuário tirar o mouse
+  </p>
+</body>
+</html>
