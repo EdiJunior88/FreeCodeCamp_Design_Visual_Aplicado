@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Usar a propriedade scale de transformação do CSS para dimensionar um elemento ao passar o cursor do mouse sobre ele</title>
+</head>
+<body>
+  <h1>Usar a propriedade scale de transformação do CSS para dimensionar um elemento ao passar o cursor do mouse sobre ele</h1>
+  <p>
+    A propriedade <code><mark>transform</mark></code> tem uma variedade de funções que permitem dimensionar, mover, girar ou inclinar os elementos, entre outras. Quando usado com pseudoclasses como <code><mark>:hover</mark></code>, que especificam um certo estado de um elemento, a propriedade <code><mark>transform</mark></code> pode facilmente adicionar interatividade aos seus elementos.
+
+    <br><br>
+
+    Aqui está um exemplo para dimensionar os elementos do parágrafo para 2.1 vezes seu tamanho original quando um usuário passa o mouse sobre eles:
+
+    <br>
+
+    <div>
+      <code>
+        p:hover {
+          <br>
+          &nbsp; transform: scale(2.1);
+          <br>
+        }
+      </code>
+    </div>
+    
+    <br>
+
+    <strong>Observação</strong>: aplicar uma transformação a um elemento <code><mark>div</mark></code> também afetará quaisquer elementos filho contidos na div.
+
+    <br><br>
+
+    Adicione uma regra CSS para o estado <code><mark>hover</mark></code> da <code><mark>div</mark></code> e use a propriedade <code><mark>transform</mark></code> para dimensionar o elemento <code><mark>div</mark></code> para 1.1 vezes seu tamanho original quando um usuário passa o mouse sobre ele.
+  </p>
+</body>
+</html>
