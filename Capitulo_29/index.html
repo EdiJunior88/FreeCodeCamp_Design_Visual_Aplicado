@@ -5,16 +5,71 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="index.css">
-  <title>Ajustar a cor de vários elementos para cores complementares</title>
+  <title>Ajustar a tonalidade de uma cor</title>
 </head>
 <body>
-  <h1>Ajustar a cor de vários elementos para cores complementares</h1>
+  <h1>Ajustar a tonalidade de uma cor</h1>
   <p>
-    O desafio das Cores Complementares mostrou que cores opostas no círculo cromático podem fazer as demais cores parecerem mais vibrantes quando colocadas lado a lado. No entanto, o forte contraste visual pode ser chocante se for usado demais em um site e, às vezes, pode tornar o texto mais difícil de ler se for colocado em um fundo de cores complementares. Na prática, uma das cores geralmente é dominante e o complemento é usado para chamar a atenção visual para determinado conteúdo da página.
+    As cores têm várias características, incluindo tonalidade, saturação e luminosidade. CSS3 introduziu a função <code><mark>hsl()</mark></code> como uma forma alternativa de escolher uma cor informando diretamente essas características.
 
     <br><br>
 
-    Esta página usará um tom de azul-petróleo (<code><mark>#09A7A1</mark></code>) como cor dominante Seu complemento laranja (<code><mark>#FF790E</mark></code>) será usado para destacar visualmente os botões de inscrição. Altere a propriedade <code><mark>background-color</mark></code> do <code><mark>header</mark></code> e do <code><mark>footer</mark></code> de preto para azul-petróleo. Em seguida, altere a propriedade <code><mark>color</mark></code> do <code><mark>h2</mark></code> para azul-petróleo também. Finalmente, mude a propriedade <code><mark>background-color</mark></code> do <code><mark>button</mark></code> para a cor laranja.
+    Tonalidade é o que as pessoas geralmente chamam de 'cor'. Se você imaginar um espectro de cores começando com o vermelho à esquerda, passando pelo verde no meio e pelo azul à direita, a tonalidade é qualquer cor que esteja dentro deste espectro. No <code><mark>hsl()</mark></code>, a tonalidade é definida usando o conceito de círculo cromático em vez de um espectro, onde o ângulo da cor no círculo é um valor entre 0 e 360.
+
+    <br><br>
+
+    Saturação é a quantidade de cinza em uma cor. Uma cor totalmente saturada não contém cinza e uma cor minimamente saturada é quase totalmente cinza. Essa característica é definida usando porcentagem, onde 100% é totalmente saturado.
+
+    <br><br>
+
+    Luminosidade é a quantidade de branco ou preto em uma cor. Um valor válido, em porcentagem, varia de 0% (preto) a 100% (branco), onde 50% é a cor normal.
+
+    <br><br>
+
+    Aqui estão alguns exemplos de uso do <code><mark>hsl()</mark></code> com cores totalmente saturadas e luminosidade normal:
+
+    <br>
+
+    <table>
+      <tr>
+        <td>Cor</td>
+        <td>HSL</td>
+      </tr>
+
+      <tr>
+        <td>Vermelho</td>
+        <td>hsl(0, 100%, 50%)</td>
+      </tr>
+
+      <tr>
+        <td>Amarelo</td>
+        <td>hsl(60, 100%, 50%)</td>
+      </tr>
+
+      <tr>
+        <td>Verde</td>
+        <td>hsl(120, 100%, 50%)</td>
+      </tr>
+
+      <tr>
+        <td>Ciano</td>
+        <td>hsl(180, 100%, 50%)</td>
+      </tr>
+
+      <tr>
+        <td>Azul</td>
+        <td>hsl(240, 100%, 50%)</td>
+      </tr>
+
+      <tr>
+        <td>Magenta</td>
+        <td>hsl(300, 100%, 50%)</td>
+      </tr>
+    </table>
+    
+    <br>
+
+    Altere a propriedade <code><mark>background-color</mark></code> de cada elemento <code><mark>div</mark></code> com base nos nomes das classes (<code><mark>green</mark></code>, <code><mark>cyan</mark></code> ou <code><mark>blue</mark></code>) usando <code><mark>hsl()</mark></code>. Todos as três devem estar totalmente saturadas e ter luminosidade normal.
   </p>
 </body>
 </html>

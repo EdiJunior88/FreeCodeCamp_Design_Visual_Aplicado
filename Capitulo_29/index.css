@@ -3,3 +3,22 @@ div {
   padding: 20px 20px;
   font-weight: bolder;
 }
+
+table {
+  border-collapse: collapse;
+  text-align: center;
+}
+
+table tr:nth-child(2),
+tr:nth-child(4),
+tr:nth-child(6) {
+  background: rgb(204, 204, 204);
+}
+
+table tr:nth-child(1) {
+  font-weight: bolder;
+}
+
+td {
+  padding: 10px 20px;
+}
