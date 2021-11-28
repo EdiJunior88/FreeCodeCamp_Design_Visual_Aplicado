@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Usar um gradiente linear com CSS para criar um elemento listrado</title>
+</head>
+<body>
+  <h1>Usar um gradiente linear com CSS para criar um elemento listrado</h1>
+  <p>
+    A função <code><mark>repeating-linear-gradient()</mark></code> é muito semelhante a <code><mark>linear-gradient()</mark></code>, com a principal diferença de que repete o padrão de gradiente especificado. <code><mark>repeating-linear-gradient()</mark></code> aceita uma variedade de valores, mas, para simplificar, você vai trabalhar com um valor de ângulo e valores de interrupção de cor neste desafio.
+
+    <br><br>
+
+    O valor do ângulo é a direção do gradiente. As interrupções de cor são como valores de largura que marcam onde ocorre uma transição e são fornecidas com uma porcentagem ou um número de pixels.
+
+    <br><br>
+
+    No exemplo demonstrado no editor de código, o gradiente começa com a cor amarela (<code><mark>yellow</mark></code>) em 0 pixels, que se mistura com a segunda cor (<code><mark>blue</mark></code>) a 40 pixels de distância do início. Como a próxima interrupção de cor também está em 40 pixels, o gradiente muda imediatamente para a terceira cor (<code><mark>green</mark></code>), que se mistura com o valor da quarta cor (<code><mark>red</mark></code>), pois está a 80 pixels de distância desde o início do gradiente.
+
+    <br><br>
+
+    Para este exemplo, ajuda pensar nas interrupções de cor como pares onde cada duas cores se misturam.
+
+    <br>
+
+    <div>
+      <code>
+        0px [yellow -- blend -- blue] 40px [green -- blend -- red] 80px
+      </code>
+    </div>
+    
+    <br>
+
+    Se cada dois valores finais de cores forem da mesma cor, a mistura não será perceptível porque está entre a mesma cor, seguida por uma transição brusca para a próxima cor. Assim, ao final, você terá listras.
+
+    <br><br>
+
+    Faça listras alterando o <code><mark>repeating-linear-gradient()</mark></code> para usar um ângulo de gradiente de <code><mark>45deg</mark></code> e, em seguida, defina as duas primeiras interrupções de cor para <code><mark>yellow</mark></code> e, finalmente, as duas interrupções de cor posteriores como <code><mark>black</mark></code>.
+  </p>
+</body>
+</html>
