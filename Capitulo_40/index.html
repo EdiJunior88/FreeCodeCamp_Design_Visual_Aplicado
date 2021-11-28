@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Aprender como funcionam as propriedades de animação e @keyframes do CSS</title>
+</head>
+<body>
+  <h1>Aprender como funcionam as propriedades de animação e @keyframes do CSS</h1>
+  <p>
+    Para animar um elemento, você precisa aprender as propriedades de animação e a regra <code><mark>@keyframes</makr></code>. As propriedades de animação controlam como a animação deve se comportar e a regra <code><mark>@keyframes</makr></code> controla o que acontece durante essa animação. Existem oito propriedades de animação no total. Este desafio será simples e vai abranger os dois mais importantes:
+
+    <br><br>
+
+    <code><mark>animation-name</mark></code> define o nome da animação, que mais tarde será usado por <code><makr>@keyframes</makr></code> para dizer ao CSS quais regras combinam com quais animações.
+
+    <br><br>
+
+    <code><mark>animation-duration</mark></code> define a duração da animação.
+
+    <br><br>
+
+    <code><mark>@keyframes</mark></code> é como especificar exatamente o que acontece na animação ao longo de sua duração. Isso é feito fornecendo propriedades CSS para "tempos" específicos durante a animação, com porcentagens que variam de 0% a 100%. Se você comparar isso a um filme, as propriedades CSS em 0% representariam como o elemento seria exibido na cena de abertura. As propriedades do CSS em 100% representariam como o elemento aparecia no final, antes do rolamento dos créditos. Por fim, o CSS faz a parte mágica de criar a transição do elemento ao longo da duração da animação. Aqui está um exemplo para ilustrar o uso de <code><mark>@keyframes</mark></code> e as propriedades de animação:
+
+    <br>
+
+    <div>
+      <code>
+        #anim {
+          <br>
+          &nbsp; animation-name: colorful;
+          <br>
+          &nbsp; animation-duration: 3s;
+          <br>
+        }
+        <br><br>
+        @keyframes colorful {
+          <br>
+          &nbsp; 0% {
+            <br>
+            &nbsp; &nbsp; background-color: blue;
+            <br>
+          &nbsp; }
+            <br>
+          &nbsp; 100% {
+            <br>
+            &nbsp; &nbsp; background-color: yellow;
+            <br>
+          &nbsp; }
+          <br>
+        }
+      </code>
+    </div>
+
+    <br>
+
+    Para o elemento com o id <code><mark>anim</mark></code>, o trecho de código acima define o valor da propriedade <code><mark>animation-name</mark></code> como <code><mark>colorful</mark></code> e define o valor da propriedade <code><mark>animation-duration</mark></code> como 3 segundos. Em seguida, a regra <code><mark>@keyframes</makr></code> é vinculada às propriedades da animação com o nome <code><mark>colorful</mark></code>. Ela define a cor como azul no início da animação (0%), que mudará para amarelo no final da animação (100%). Você não está limitado apenas a transições de início e fim, você pode definir propriedades para qualquer valor entre 0% e 100%.
+
+    <br><br>
+
+    Crie uma animação para o elemento com o id <code><mark>rect</mark></code>, definindo o valor da propriedade <code><mark>animation-name</mark></code> como <code><mark>rainbow</mark></code> e o valor da propriedade <code><mark>animation-duration</mark></code> como 4 segundos. Em seguida, declare uma regra <code><mark>@keyframes</makr></code> e defina a propriedade <code><mark>background-color</mark></code> no início da animação (<code><mark>0%</mark></code>) para azul, o meio da animação (<code><mark>50%</mark></code>) para verde e o final da animação (<code><mark>100%</mark></code>) para amarelo.
+  </p>
+</body>
+</html>
