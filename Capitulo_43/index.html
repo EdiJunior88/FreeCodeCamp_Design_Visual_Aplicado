@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Criar movimentos usando animações CSS</title>
+</head>
+<body>
+  <h1>Criar movimentos usando animações CSS</h1>
+  <p>
+    Quando os elementos têm a propriedade position <code><mark>definida</mark></code>, como <code><mark>fixed</mark></code> ou <code><mark>relative</mark></code>, as propriedades de deslocamento CSS <code><mark>right</mark></code>, <code><mark>left</mark></code>, <code><mark>top</mark></code> e <code><mark>bottom</mark></code> podem ser usadas em regras de animação para criar movimento.
+
+    <br><br>
+
+    Conforme mostrado no exemplo abaixo, você pode empurrar o item para baixo e para cima. No keyframe de <code><mark>50%</mark></code> a propriedade <code><mark>top</mark></code> recebeu 50px, empurrando o elemento para baixo. Já nos keyframes <code><mark>0%</mark></code> e <code><mark>100%</mark></code>, a propriedade recebeu 0px.
+
+    <br>
+
+    <div>
+      <code>
+        @keyframes rainbow {
+          <br>
+          &nbsp; 0% {
+            <br>
+            &nbsp; &nbsp; background-color: blue;
+            <br>
+            &nbsp; &nbsp; top: 0px;
+            <br>
+          &nbsp; }
+          <br>
+          &nbsp; 50% {
+            <br>
+            &nbsp; &nbsp; background-color: green;
+            <br>
+            &nbsp; &nbsp; top: 50px;
+            <br>
+          &nbsp; }
+          <br>
+          &nbsp; 100% {
+            <br>
+            &nbsp; &nbsp; background-color: yellow;
+            <br>
+            &nbsp; &nbsp; top: 0px;
+            <br>
+          &nbsp; }
+          <br>
+        }
+      </code>
+    </div>
+
+    <br>
+
+    Adicione um movimento horizontal na <code><mark>div</mark></code>. Usando a propriedade de deslocamento <code><mark>left</mark></code>, defina na regra <code><mark>@keyframes</mark></code> para que o arco-íris comece em 0 pixels em <code><mark>0%</mark></code> e se mova para 25 pixels em <code><mark>50%</mark></code> e termine em -25 pixels em 100%. Não substitua a propriedade <code><mark>top</mark></code> no editor - a animação deve ter movimento vertical e horizontal.
+  </p>
+</body>
+</html>
