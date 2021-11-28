@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Criar formas complexas usando CSS e HTML</title>
+</head>
+<body>
+  <h1>Criar formas complexas usando CSS e HTML</h1>
+  <p>
+    Uma das formas mais populares do mundo é a forma de coração e, neste desafio, você criará um usando CSS puro. Mas primeiro, você precisa entender os pseudo-elementos <code><mark>::before</mark></code> e <code><mark>::after</mark></code>. Esses pseudo-elementos são usados para adicionar algo antes ou depois de um elemento selecionado. No exemplo a seguir, um pseudo-elemento <code><mark>::before</mark></code> é usado para adicionar um retângulo a um elemento com a classe <code><mark>heart</mark></code>:
+
+    <br>
+
+    <div>
+      <code>
+        .heart::before {
+          <br>
+          &nbsp; content: "";
+          <br>
+          &nbsp; background-color: yellow;
+          <br>
+          &nbsp; border-radius: 25%;
+          <br>
+          &nbsp; position: absolute;
+          <br>
+          &nbsp; height: 50px;
+          <br>
+          &nbsp; width: 70px;
+          <br>
+          &nbsp; top: -50px;
+          <br>
+          &nbsp; left: 5px;
+          <br>
+        }
+      </code>
+    </div>
+
+    <br>
+    
+    Para que os pseudo-elementos <code><mark>::before</mark></code> e <code><mark>::after</mark></code> funcionem corretamente, eles devem ter a propriedade <code><mark>content</mark></code> definida. Esta propriedade é geralmente usada para adicionar coisas como uma foto ou texto ao elemento selecionado. Quando os pseudo-elementos <code><mark>::before</mark></code> e <code><mark>::after</mark></code> são usados para criar formas, a propriedade <code><mark>content</mark></code> ainda é necessária, mas é definida com um valor vazio. No exemplo acima, o elemento com a classe <code><mark>heart</mark></code> tem um pseudo-elemento <code><mark>::before</mark></code> que produz um retângulo amarelo com altura e largura de <code><mark>50px</mark></code> e <code><mark>70px</mark></code>, respectivamente. Este retângulo tem cantos arredondados por conta da propriedade <code><mark>border-radius</mark></code> de 25% e está posicionado absolutamente <code><mark>5px</mark></code> a esquerda e <code><mark>50px</mark></code> acima do topo do elemento.
+
+    <br><br>
+
+    Transforme o elemento em tela em um coração. No seletor <code><mark>heart::after</mark></code>, altere a propriedade <code>background-color</code> para <code><mark>pink</mark></code> e <code><mark>border-radius</mark></code> para 50%.
+
+    <br><br>
+
+    Em seguida, adicione a propriedade <code><mark>transform</mark></code> no elemento com a classe <code><mark>heart</mark></code> (apenas <code><mark>heart</mark></code>). Use a função <code><mark>rotate()</mark></code> com o valor de -45 graus.
+
+    <br><br>
+
+    Finalmente, no seletor <code><mark>heart::before</mark></code>, a propriedade <code><mark>content</mark></code> deve possuir um valor vazio.
+  </p>
+</body>
+</html>
