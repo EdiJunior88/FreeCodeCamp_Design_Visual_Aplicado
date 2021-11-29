@@ -11,7 +11,7 @@ Neste curso, você vai aprender como aplicar esses diferentes elementos do desig
 
 <hr>
 
-<strong>Página do Módulo:</strong> https://edijunior88.github.io/FreeCodeCamp_Design_Visual_Aplicado/
+<strong>Página do Projeto:</strong> https://edijunior88.github.io/FreeCodeCamp_Design_Visual_Aplicado/
 
 <hr>
 
@@ -77,4 +77,4 @@ Neste curso, você vai aprender como aplicar esses diferentes elementos do desig
 <hr>
 
 <h4><b>Curso:</b> :green_book: :books: 52 capítulos</h4>
-<h4><b>Status do Curso:</b> :speech_balloon: Estudando</h4>
+<h4><b>Status do Curso:</b> :white_check_mark: Concluído</h4>
