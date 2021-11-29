@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Usar uma curva de Bézier para mover um elemento</title>
+</head>
+<body>
+  <h1>Usar uma curva de Bézier para mover um elemento</h1>
+  <p>
+    Em um desafio anterior, tratamos da palavra-chave <code><mark>ease-out</mark></code>, que descreve uma mudança de animação que começa acelerando e desacelera ao final da animação. À direita, a diferença entre a palavra-chave <code><mark>ease-out</mark></code> (para o elemento azul) e a palavra-chave <code><mark>linear</mark></code> (para o elemento vermelho) é demonstrada. Progressões de animação semelhantes à palavra-chave <code><mark>ease-out</mark></code> podem ser alcançadas usando a função de curva de Bézier cúbica.
+
+    <br><br>
+
+    Em geral, alterar os pontos de ancoragem <code><mark>p1</mark></code> (ponto 1) e <code><mark>p2</mark></code> (ponto 2) leva à criação de diferentes curvas de Bézier, que controlam como a animação progride ao longo do tempo. Aqui está um exemplo de curva de Bézier usando valores para imitar o estilo <code><mark>ease-out</mark></code>:
+
+    <br>
+
+    <div>
+      <code>
+        animation-timing-function: cubic-bezier(0, 0, 0.58, 1);
+      </code>
+    </div>
+
+    <br>
+
+    Lembre-se de que todas as funções <code><mark>cubic-bezier</mark></code> começam com <code><mark>p0</mark></code> em (0, 0) e terminam com <code><mark>p3</mark></code> em (1, 1). Neste exemplo, a curva se move mais rápido através do eixo Y (começa em 0, vai para o valor de y 0 de <code><mark>p1</mark></code>, então vai para o valor de y 1 de <code><mark>p2</mark></code>). Então, ela se move através do eixo X (0 para o início, então 0 para <code><mark>p1</mark></code>, até 0.58 para <code><mark>p2</mark></code>). Como resultado, a mudança no elemento animado progride mais rápido do que o tempo da animação para aquele segmento. Perto do final da curva, a relação entre a mudança nos valores x e y se inverte - o valor de y se move de 1 para 1 (sem mudança) e o valor de x se move de 0.58 para 1, fazendo com que o progresso das mudanças na animação seja mais lento em comparação com a duração da animação.
+
+    <br><br>
+
+    Para ver o efeito desta curva de Bézier em ação, altere a <code><mark>animation-timing-function</mark></code> do elemento com id de <code><mark>red</mark></code> para um <code><mark>cubic-bezier</mark></code> função com os valores x1, y1, x2, y2 definidos respectivamente para 0, 0, 0.58, 1. Isso fará com que os dois elementos progridam na animação de maneira semelhante.
+  </p>
+</body>
+</html>
