@@ -11,6 +11,14 @@ Neste curso, você vai aprender como aplicar esses diferentes elementos do desig
 
 <hr>
 
+<strong>Página do Módulo:</strong> 
+
+<hr>
+
+![index-readme](index-readme.gif)
+
+<hr>
+
 <ul>
   <li>Criar equilíbrio visual usando a propriedade text-align</li>
   <li>Ajustar a largura de um elemento usando a propriedade width</li>
