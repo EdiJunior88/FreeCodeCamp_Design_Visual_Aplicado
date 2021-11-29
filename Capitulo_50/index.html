@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Aprender como as curvas de Bézier funcionam</title>
+</head>
+<body>
+  <h1>Aprender como as curvas de Bézier funcionam</h1>
+  <p>
+    O último desafio introduziu a propriedade <code><mark>animation-timing-function</mark></code> e algumas palavras-chave que mudam a velocidade de uma animação ao longo de sua duração. O CSS oferece uma opção diferente das palavras-chave que fornece um controle ainda mais preciso sobre como a animação é reproduzida, através do uso de curvas de Bézier.
+
+    <br><br>
+
+    Nas animações com CSS, as curvas de Bézier são usadas com a função <code><mark>cubic-bezier</mark></code>. O formato da curva representa a forma como a animação é reproduzida. A curva é criada com base em um sistema de coordenadas 1 por 1. O eixo X deste sistema de coordenadas é a duração da animação (pense nele como uma escala de tempo), e o eixo Y é a mudança na animação.
+
+    <br><br>
+
+    A função <mark><code>cubic-bezier</code></mark> consiste em quatro pontos principais que ficam nesta grade de 1 por 1: <code><mark>p0</mark></code>, <code><mark>p1</mark></code>, <code><mark>p2</mark></code> e <code><mark>p3</mark></code>. <code><mark>p0</mark></code> e <code><mark>p3</mark></code> já estão definidos para você - eles são os pontos de início e de final que estão sempre localizados respectivamente na origem (0, 0) e (1, 1). Você define os valores de x e y para os outros dois pontos e onde você os coloca na grade dita o formato da curva para que a animação aconteça. Isto é feito no CSS declarando os valores de x e y dos pontos "âncora" p1 e p2, no formato: <code><mark>(x1, y1, x2, y2)</mark></code>. Juntando tudo, aqui está um exemplo de uma curva de Bézier:
+
+    <br>
+    
+    <div>
+      <code>
+        animation-timing-function: cubic-bezier(0.25, 0.25, 0.75, 0.75);
+      </code>
+    </div>
+    
+    <br>
+
+    No exemplo acima, os valores de x e y são equivalentes para cada ponto (x1 = 0,25 = y1 e x2 = 0. 5 = y2), que se você se lembrar da aula de geometria, resulta em uma linha que estende da origem ao ponto (1, 1). Esta animação é uma mudança linear de um elemento durante a reprodução de uma animação, e é o mesmo que usar a palavra-chave <code><mark>linear</mark></code>. Em outras palavras, a animação acontece a uma velocidade constante.
+
+    <br><br>
+
+    Para o elemento com id de <code><mark>ball1</mark></code>, altere o valor da propriedade <code><mark>animation-timing-function</mark></code> de <code><mark>linear</mark></code> para seu valor equivalente na função <code><mark>cubic-bezier</mark></code>. Use os valores dos pontos dados no exemplo acima.
+  </p>
+</body>
+</html>
