@@ -68,5 +68,5 @@ Neste curso, você vai aprender como aplicar esses diferentes elementos do desig
 
 <hr>
 
-<h4><b>Curso:</b> :green_book: :books: 51 capítulos</h4>
+<h4><b>Curso:</b> :green_book: :books: 52 capítulos</h4>
 <h4><b>Status do Curso:</b> :speech_balloon: Estudando</h4>
