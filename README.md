@@ -11,7 +11,7 @@ Neste curso, você vai aprender como aplicar esses diferentes elementos do desig
 
 <hr>
 
-<strong>Página do Projeto:</strong> <a href"https://edijunior88.github.io/FreeCodeCamp_Design_Visual_Aplicado/">https://edijunior88.github.io/FreeCodeCamp_Design_Visual_Aplicado/</a>
+<strong>Página do Projeto:</strong> <a href="https://edijunior88.github.io/FreeCodeCamp_Design_Visual_Aplicado/">https://edijunior88.github.io/FreeCodeCamp_Design_Visual_Aplicado/</a>
 
 <hr>
 
