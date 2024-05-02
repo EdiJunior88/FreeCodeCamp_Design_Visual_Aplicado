@@ -76,5 +76,11 @@ Neste curso, você vai aprender como aplicar esses diferentes elementos do desig
 
 <hr>
 
+<h3>Tecnologias Utilizadas</h3>
+
+Para ver todas as tecnologias [clique aqui](/techstack.md)
+
+<hr>
+
 <h4><b>Curso:</b> :green_book: :books: 52 capítulos</h4>
 <h4><b>Status do Curso:</b> :white_check_mark: Concluído</h4>
